@@ -13,12 +13,10 @@
       --navy: #071b33;
       --navy-2: #092746;
       --blue: #0057a8;
-      --blue-2: #0073ce;
       --orange: #ff6428;
       --orange-dark: #e95417;
       --white: #ffffff;
       --offwhite: #f5f7fa;
-      --soft: #eef2f6;
       --text: #101820;
       --muted: #5e6a75;
       --line: #dbe2ea;
@@ -720,6 +718,17 @@
       resize: vertical;
     }
 
+    .success-message {
+      display: none;
+      background: #e8f6ee;
+      border-left: 4px solid #1f8f4d;
+      color: #145c32;
+      padding: 15px 16px;
+      border-radius: 4px;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
     .form-note {
       color: var(--muted);
       font-size: 12px;
@@ -874,47 +883,20 @@
         </div>
 
         <div class="hero-card-body">
-          <div class="report-row">
-            <span>Rent collected</span>
-            <strong>Tracked</strong>
-          </div>
-          <div class="report-row">
-            <span>Outstanding balances</span>
-            <strong>Reported</strong>
-          </div>
-          <div class="report-row">
-            <span>Property tax due dates</span>
-            <strong>Monitored</strong>
-          </div>
-          <div class="report-row">
-            <span>Vendor invoices</span>
-            <strong>Organized</strong>
-          </div>
-          <div class="report-row">
-            <span>Maintenance issues</span>
-            <strong>Followed up</strong>
-          </div>
+          <div class="report-row"><span>Rent collected</span><strong>Tracked</strong></div>
+          <div class="report-row"><span>Outstanding balances</span><strong>Reported</strong></div>
+          <div class="report-row"><span>Property tax due dates</span><strong>Monitored</strong></div>
+          <div class="report-row"><span>Vendor invoices</span><strong>Organized</strong></div>
+          <div class="report-row"><span>Maintenance issues</span><strong>Followed up</strong></div>
         </div>
       </div>
     </section>
 
     <div class="stats">
-      <div class="stat">
-        <strong>01</strong>
-        <span>Direct point of contact</span>
-      </div>
-      <div class="stat">
-        <strong>02</strong>
-        <span>Accounting-led reporting</span>
-      </div>
-      <div class="stat">
-        <strong>03</strong>
-        <span>Maintenance coordination</span>
-      </div>
-      <div class="stat">
-        <strong>04</strong>
-        <span>Property tax tracking</span>
-      </div>
+      <div class="stat"><strong>01</strong><span>Direct point of contact</span></div>
+      <div class="stat"><strong>02</strong><span>Accounting-led reporting</span></div>
+      <div class="stat"><strong>03</strong><span>Maintenance coordination</span></div>
+      <div class="stat"><strong>04</strong><span>Property tax tracking</span></div>
     </div>
 
     <section class="services" id="services">
@@ -928,13 +910,10 @@
       </div>
 
       <div class="service-grid">
-
         <div class="service-card reveal">
           <div class="service-number">01</div>
           <h3>Property Management Support</h3>
-          <p>
-            Day-to-day support for property operations, tenant issues, owner updates and organized follow-through.
-          </p>
+          <p>Day-to-day support for property operations, tenant issues, owner updates and organized follow-through.</p>
           <ul>
             <li>Tenant communication</li>
             <li>Issue tracking</li>
@@ -946,9 +925,7 @@
         <div class="service-card reveal">
           <div class="service-number">02</div>
           <h3>Property Accounting & Owner Reporting</h3>
-          <p>
-            Clean accounting support designed to help owners understand income, expenses and open items.
-          </p>
+          <p>Clean accounting support designed to help owners understand income, expenses and open items.</p>
           <ul>
             <li>Rent roll tracking</li>
             <li>Expense summaries</li>
@@ -960,9 +937,7 @@
         <div class="service-card reveal">
           <div class="service-number">03</div>
           <h3>Rent Tracking & Arrears Reporting</h3>
-          <p>
-            Clear visibility into what was collected, what remains outstanding and what requires follow-up.
-          </p>
+          <p>Clear visibility into what was collected, what remains outstanding and what requires follow-up.</p>
           <ul>
             <li>Paid and unpaid tracking</li>
             <li>Tenant balance summaries</li>
@@ -974,9 +949,7 @@
         <div class="service-card reveal">
           <div class="service-number">04</div>
           <h3>Property Tax & Municipal Bill Management</h3>
-          <p>
-            Tracking support for property tax bills, instalments, due dates, receipts and monthly reconciliation.
-          </p>
+          <p>Tracking support for property tax bills, instalments, due dates, receipts and monthly reconciliation.</p>
           <ul>
             <li>Property tax due date tracking</li>
             <li>Municipal bill reminders</li>
@@ -988,9 +961,7 @@
         <div class="service-card reveal">
           <div class="service-number">05</div>
           <h3>Maintenance Coordination</h3>
-          <p>
-            Coordinating repair issues with third-party vendors and keeping the tenant and owner updated.
-          </p>
+          <p>Coordinating repair issues with third-party vendors and keeping the tenant and owner updated.</p>
           <ul>
             <li>Leak and plumbing coordination</li>
             <li>Electrical vendor coordination</li>
@@ -1002,9 +973,7 @@
         <div class="service-card reveal">
           <div class="service-number">06</div>
           <h3>Document & Vendor Management</h3>
-          <p>
-            Organized records for leases, invoices, receipts, quotes, photos, approvals and property files.
-          </p>
+          <p>Organized records for leases, invoices, receipts, quotes, photos, approvals and property files.</p>
           <ul>
             <li>Vendor files</li>
             <li>Tenant document tracking</li>
@@ -1012,7 +981,6 @@
             <li>Owner approval records</li>
           </ul>
         </div>
-
       </div>
     </section>
 
@@ -1066,9 +1034,7 @@
       <div class="tax-wrap">
         <div class="tax-panel reveal">
           <h3>Monthly tracking</h3>
-          <p>
-            A clean monthly process to organize property tax amounts, municipal bills, receipts and related owner records.
-          </p>
+          <p>A clean monthly process to organize property tax amounts, municipal bills, receipts and related owner records.</p>
           <ul>
             <li>Property tax bill tracking</li>
             <li>Instalment due date reminders</li>
@@ -1080,9 +1046,7 @@
 
         <div class="tax-panel reveal">
           <h3>Yearly organization</h3>
-          <p>
-            Year-end organization so owners and accountants are not chasing missing property tax and municipal records later.
-          </p>
+          <p>Year-end organization so owners and accountants are not chasing missing property tax and municipal records later.</p>
           <ul>
             <li>Annual property tax summary</li>
             <li>Municipal charge documentation</li>
@@ -1171,9 +1135,7 @@
       <div class="section-head reveal">
         <div class="section-kicker">Contact</div>
         <h2>Tell me what you need help managing.</h2>
-        <p>
-          Send the property type, location, number of units and the main issue you want solved.
-        </p>
+        <p>Send the property type, location, number of units and the main issue you want solved.</p>
       </div>
 
       <div class="contact-grid">
@@ -1206,17 +1168,14 @@
 
         <div class="lead-form reveal">
           <h3>Quick inquiry</h3>
-          <p>
-            Fill this out and your inquiry will be sent directly to HK Property Services.
-          </p>
+          <p>Fill this out and your inquiry will be sent directly to HK Property Services.</p>
 
           <form action="https://formsubmit.co/info@hkpropertyservices.ca" method="POST">
 
             <input type="hidden" name="_subject" value="New HK Property Services Inquiry">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://hkpropertyservices.ca">
-
+            <input type="hidden" name="_next" value="https://hkpropertyservices.ca/?submitted=true#contact">
             <input type="text" name="_honey" style="display:none">
 
             <div class="form-row">
@@ -1243,6 +1202,10 @@
             <textarea name="Message" placeholder="Briefly explain what you need help with"></textarea>
 
             <button class="btn btn-primary" type="submit">Send Inquiry</button>
+
+            <div id="successMessage" class="success-message">
+              Inquiry submitted. Please allow 1–2 business days for a response.
+            </div>
 
             <div class="form-note">
               Your inquiry will be sent to info@hkpropertyservices.ca.
@@ -1271,6 +1234,17 @@
     }, { threshold: 0.12 });
 
     revealElements.forEach(el => observer.observe(el));
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.get('submitted') === 'true') {
+      const successMessage = document.getElementById('successMessage');
+
+      if (successMessage) {
+        successMessage.style.display = 'block';
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
   </script>
 
 </body>
