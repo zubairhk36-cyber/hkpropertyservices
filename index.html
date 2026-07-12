@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>HK Property Services | Property Management and Property Accounting</title>
+
+  <meta name="description" content="HK Property Services provides accounting-led property management support for small landlords and property owners, including rent tracking, maintenance coordination, tenant communication, vendor follow-up, and monthly owner reporting." />
+
+  <style>
+    :root {
+      --bg: #f7f3ec;
+      --bg-light: #fffaf3;
+      --text: #171717;
+      --muted: #5f5b55;
+      --line: #ded6ca;
+      --card: #ffffff;
+      --dark: #151515;
+      --gold: #9b7a3a;
+      --soft-gold: #efe5d2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header {
+      width: 100%;
+      padding: 24px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      background: rgba(247, 243, 236, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      gap: 26px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 95px 7% 80px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 74px);
+      line-height: 1.02;
+      margin: 0 0 24px;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 720px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 700;
+      border: 1px solid var(--dark);
+    }
+
+    .btn-primary {
+      background: var(--dark);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--dark);
+    }
+
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 34px;
+      border-radius: 14px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    }
+
+    .hero-card h3 {
+      margin: 0 0 16px;
+      font-size: 22px;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .check-list li {
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .check-list li:last-child {
+      border-bottom: none;
+    }
+
+    section {
+      padding: 78px 7%;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      max-width: 820px;
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.08;
+      margin: 0 0 16px;
+      letter-spacing: -1px;
+    }
+
+    .section-head p {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      min-height: 220px;
+    }
+
+    .card-number {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: start;
+      background: var(--dark);
+      color: white;
+    }
+
+    .feature p {
+      color: #cfcfcf;
+    }
+
+    .feature-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .feature-box h3 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .feature-box ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #d7d7d7;
+    }
+
+    .feature-box li {
+      margin: 12px 0;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      background: var(--bg-light);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 26px;
+      position: relative;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--soft-gold);
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 34px;
+    }
+
+    .panel h3 {
+      font-size: 26px;
+      margin: 0 0 14px;
+    }
+
+    .panel p {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .panel ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .contact {
+      background: var(--bg-light);
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .contact-card {
+      background: var(--dark);
+      color: white;
+      padding: 36px;
+      border-radius: 14px;
+    }
+
+    .contact-card p {
+      color: #d5d5d5;
+    }
+
+    .contact-line {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .contact-line:last-child {
+      border-bottom: none;
+    }
+
+    .contact-line strong {
+      display: block;
+      margin-bottom: 4px;
+      color: white;
+    }
+
+    .contact-line a {
+      color: #f1e3c6;
+      text-decoration: none;
+    }
+
+    .simple-form {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 36px;
+    }
+
+    .simple-form h3 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    .simple-form p {
+      color: var(--muted);
+    }
+
+    .notice {
+      background: var(--soft-gold);
+      border-left: 4px solid var(--gold);
+      padding: 16px;
+      border-radius: 6px;
+      color: #4a3a1d;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 34px 7%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #b8b8b8;
+    }
+
+    @media (max-width: 920px) {
+      .hero,
+      .feature,
+      .split,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 20px 6%;
+      }
+
+      .hero,
+      section {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .grid,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">HK <span>Property</span> Services</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#accounting">Accounting</a>
+      <a href="#maintenance">Maintenance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Accounting led property support</div>
+        <h1>Property management with clean numbers and reliable follow up.</h1>
+        <p>
+          HK Property Services helps small landlords and property owners manage rent tracking,
+          tenant communication, maintenance coordination, vendor follow up, and monthly owner reporting.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request a Consultation</a>
+          <a class="btn btn-secondary" href="#services">View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Built for owners who want clarity.</h3>
+        <ul class="check-list">
+          <li>Rent tracking and arrears follow up</li>
+          <li>Monthly owner reporting</li>
+          <li>Maintenance coordination with vendors</li>
+          <li>Tenant communication and issue tracking</li>
+          <li>Expense organization and invoice backup</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-head">
+        <h2>Property support designed around operations, accounting, and communication.</h2>
+        <p>
+          A property does not run properly just because rent is collected. Owners need organized records,
+          responsive communication, maintenance follow through, and clear reporting.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card-number">01</div>
+          <h3>Property Management Support</h3>
+          <p>
+            Day to day support for property operations, tenant issues, move ins, move outs,
+            follow ups, inspections, and owner updates.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">02</div>
+          <h3>Rent Tracking and Arrears</h3>
+          <p>
+            Rent roll tracking, payment follow ups, tenant balances, arrears summaries,
+            and clear updates on what has been collected and what is still outstanding.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">03</div>
+          <h3>Maintenance Coordination</h3>
+          <p>
+            Coordinating repair requests with plumbers, electricians, cleaners, handymen,
+            HVAC technicians, and other service providers when needed.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">04</div>
+          <h3>Vendor and Invoice Control</h3>
+          <p>
+            Keeping vendor invoices, quotes, approvals, photos, and repair notes organized
+            so owners have proper backup for every expense.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">05</div>
+          <h3>Tenant Communication</h3>
+          <p>
+            Handling tenant messages, complaints, repair updates, rent reminders,
+            scheduling, and general communication in a professional manner.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-number">06</div>
+          <h3>Owner Reporting</h3>
+          <p>
+            Monthly summaries that show rent collected, unpaid balances, expenses,
+            maintenance updates, and key property issues.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature" id="accounting">
+      <div>
+        <div class="eyebrow">Property accounting</div>
+        <h2>Accounting first property management.</h2>
+        <p>
+          Many property issues become worse because the numbers are messy. HK Property Services is built
+          around organized rent tracking, expense documentation, and owner reporting.
+        </p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Accounting support can include:</h3>
+        <ul>
+          <li>Rent roll tracking</li>
+          <li>Tenant balance and arrears summaries</li>
+          <li>Vendor invoice organization</li>
+          <li>Expense categorization support</li>
+          <li>Bank reconciliation support</li>
+          <li>Monthly owner statement preparation</li>
+          <li>Year end package support for the owner’s accountant</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="maintenance">
+      <div class="section-head">
+        <h2>When something goes wrong, the process matters.</h2>
+        <p>
+          If there is a leak, repair issue, tenant complaint, or vendor follow up, the goal is simple:
+          respond quickly, coordinate the right person, document the issue, and keep the owner informed.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <h3>Issue is reported</h3>
+          <p>
+            Tenant or owner reports a problem such as a leak, appliance issue, lock problem,
+            heating issue, cleaning concern, or general maintenance request.
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Urgency is assessed</h3>
+          <p>
+            The issue is reviewed to understand whether it is an emergency, an urgent repair,
+            or a regular maintenance item.
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Vendor is contacted</h3>
+          <p>
+            The appropriate vendor is contacted, access is coordinated, and quote or repair
+            details are collected where required.
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Owner is updated</h3>
+          <p>
+            The owner receives an update on the issue, expected cost, approval needed,
+            timing, and next steps.
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Work is documented</h3>
+          <p>
+            Photos, invoices, messages, approvals, and repair notes are kept organized
+            for proper backup.
+          </p>
+        </div>
+
+        <div class="step">
+          <h3>Follow up is completed</h3>
+          <p>
+            The tenant and owner are updated after the work is complete, and the repair
+            is added to the property record.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="split">
+        <div class="panel">
+          <h3>Who HK Property Services helps</h3>
+          <p>
+            This service is designed for property owners who want a direct point of contact,
+            better organization, and accounting focused property support.
+          </p>
+          <ul>
+            <li>Small landlords</li>
+            <li>Residential rental property owners</li>
+            <li>Small commercial property owners</li>
+            <li>Mixed use property owners</li>
+            <li>Owners who need cleaner monthly reporting</li>
+            <li>Owners who need help coordinating tenants and vendors</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Why work with a solo operator</h3>
+          <p>
+            With a solo operator, owners get direct communication, fewer handoffs, and a more personal
+            understanding of the property.
+          </p>
+          <ul>
+            <li>One direct point of contact</li>
+            <li>Clear communication</li>
+            <li>Hands on follow up</li>
+            <li>Organized accounting and backup</li>
+            <li>Simple monthly summaries</li>
+            <li>Vendor coordination without confusion</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <h2>Let’s discuss your property.</h2>
+        <p>
+          If you need help with property operations, rent tracking, maintenance coordination,
+          or monthly owner reporting, contact HK Property Services.
+        </p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <h3>Contact HK Property Services</h3>
+          <p>
+            Share the property type, number of units, location, and what kind of support you need.
+          </p>
+
+          <div class="contact-line">
+            <strong>Email</strong>
+            <a href="mailto:YOUR EMAIL HERE">YOUR EMAIL HERE</a>
+          </div>
+
+          <div class="contact-line">
+            <strong>Phone</strong>
+            <a href="tel:YOUR PHONE HERE">YOUR PHONE HERE</a>
+          </div>
+
+          <div class="contact-line">
+            <strong>Website</strong>
+            <a href="https://hkpropertyservices.ca">hkpropertyservices.ca</a>
+          </div>
+        </div>
+
+        <div class="simple-form">
+          <h3>What to include in your message</h3>
+          <p>
+            To make the first conversation useful, include these details:
+          </p>
+          <ul>
+            <li>Your name</li>
+            <li>Property location</li>
+            <li>Type of property</li>
+            <li>Number of units</li>
+            <li>Main issue you need help with</li>
+            <li>Whether you need accounting support, tenant support, maintenance coordination, or all of the above</li>
+          </ul>
+
+          <a class="btn btn-primary" href="mailto:YOUR EMAIL HERE?subject=Property Management Inquiry">Email Now</a>
+
+          <div class="notice">
+            Legal matters, evictions, licensed trade work, and specialized repairs are handled through qualified third party professionals where required.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© 2026 HK Property Services</div>
+    <span>Property management support, property accounting, maintenance coordination, and owner reporting.</span>
+  </footer>
+
+</body>
+</html>
