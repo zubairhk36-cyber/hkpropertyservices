@@ -6,7 +6,7 @@
 
   <title>HK Property Services | Property Management, Accounting & Owner Reporting</title>
 
-  <meta name="description" content="HK Property Services provides accounting-led property management support for landlords and property owners, including property accounting, property tax tracking, maintenance coordination, rent tracking, vendor management and owner reporting." />
+  <meta name="description" content="HK Property Services provides accounting-led property management support for landlords and property owners, including rent tracking, property accounting, property tax management, municipal bill tracking, maintenance coordination, vendor management and owner reporting." />
 
   <style>
     :root {
@@ -14,8 +14,8 @@
       --navy-2: #092746;
       --blue: #0057a8;
       --blue-2: #0073ce;
-      --orange: #ff6b2c;
-      --gold: #c9a45c;
+      --orange: #ff6428;
+      --orange-dark: #e95417;
       --white: #ffffff;
       --offwhite: #f5f7fa;
       --soft: #eef2f6;
@@ -136,8 +136,8 @@
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       background:
-        linear-gradient(rgba(7, 27, 51, 0.78), rgba(7, 27, 51, 0.78)),
-        radial-gradient(circle at 70% 20%, rgba(0, 115, 206, 0.45), transparent 35%),
+        linear-gradient(rgba(7, 27, 51, 0.82), rgba(7, 27, 51, 0.82)),
+        radial-gradient(circle at 75% 20%, rgba(0, 115, 206, 0.45), transparent 35%),
         linear-gradient(135deg, var(--navy), var(--navy-2));
       color: white;
       padding: 95px 6%;
@@ -183,13 +183,13 @@
       line-height: 0.98;
       letter-spacing: -3px;
       margin: 0 0 24px;
-      max-width: 960px;
+      max-width: 980px;
     }
 
     .hero p {
       font-size: clamp(18px, 2vw, 22px);
       color: rgba(255, 255, 255, 0.82);
-      max-width: 760px;
+      max-width: 780px;
       margin: 0;
     }
 
@@ -212,6 +212,7 @@
       border: none;
       cursor: pointer;
       font-size: 15px;
+      font-family: inherit;
     }
 
     .btn-primary {
@@ -221,7 +222,7 @@
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      background: #ff5a13;
+      background: var(--orange-dark);
       box-shadow: 0 18px 40px rgba(255, 107, 44, 0.25);
     }
 
@@ -1195,7 +1196,7 @@
 
           <div class="contact-line">
             <span>Website</span>
-            <a href="http://hkpropertyservices.ca">hkpropertyservices.ca</a>
+            <a href="https://hkpropertyservices.ca">hkpropertyservices.ca</a>
           </div>
 
           <div class="disclaimer">
@@ -1206,23 +1207,31 @@
         <div class="lead-form reveal">
           <h3>Quick inquiry</h3>
           <p>
-            Fill this out and your email app will open with the message ready to send.
+            Fill this out and your inquiry will be sent directly to HK Property Services.
           </p>
 
-          <form id="inquiryForm">
+          <form action="https://formsubmit.co/info@hkpropertyservices.ca" method="POST">
+
+            <input type="hidden" name="_subject" value="New HK Property Services Inquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://hkpropertyservices.ca">
+
+            <input type="text" name="_honey" style="display:none">
+
             <div class="form-row">
-              <input id="name" type="text" placeholder="Your name" required />
-              <input id="phone" type="text" placeholder="Phone number" />
+              <input name="Name" type="text" placeholder="Your name" required />
+              <input name="Phone" type="text" placeholder="Phone number" />
             </div>
 
-            <input id="email" type="email" placeholder="Email address" required />
+            <input name="Email" type="email" placeholder="Email address" required />
 
             <div class="form-row">
-              <input id="location" type="text" placeholder="Property location" />
-              <input id="units" type="text" placeholder="Number of units" />
+              <input name="Property Location" type="text" placeholder="Property location" />
+              <input name="Number of Units" type="text" placeholder="Number of units" />
             </div>
 
-            <select id="service">
+            <select name="Service Needed">
               <option value="Property management support">Property management support</option>
               <option value="Property accounting and owner reporting">Property accounting and owner reporting</option>
               <option value="Property tax and municipal bill management">Property tax and municipal bill management</option>
@@ -1231,12 +1240,12 @@
               <option value="Document and vendor management">Document and vendor management</option>
             </select>
 
-            <textarea id="message" placeholder="Briefly explain what you need help with"></textarea>
+            <textarea name="Message" placeholder="Briefly explain what you need help with"></textarea>
 
-            <button class="btn btn-primary" type="submit">Prepare Email</button>
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
 
             <div class="form-note">
-              This form opens your email app. No information is stored on this website.
+              Your inquiry will be sent to info@hkpropertyservices.ca.
             </div>
           </form>
         </div>
@@ -1262,36 +1271,6 @@
     }, { threshold: 0.12 });
 
     revealElements.forEach(el => observer.observe(el));
-
-    document.getElementById('inquiryForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const businessEmail = 'info@hkpropertyservices.ca';
-
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
-      const email = document.getElementById('email').value;
-      const location = document.getElementById('location').value;
-      const units = document.getElementById('units').value;
-      const service = document.getElementById('service').value;
-      const message = document.getElementById('message').value;
-
-      const subject = encodeURIComponent('Property Services Inquiry - ' + service);
-
-      const body = encodeURIComponent(
-        'Hello HK Property Services,' + '\n\n' +
-        'My name is: ' + name + '\n' +
-        'Phone: ' + phone + '\n' +
-        'Email: ' + email + '\n' +
-        'Property location: ' + location + '\n' +
-        'Number of units: ' + units + '\n' +
-        'Service needed: ' + service + '\n\n' +
-        'Message:' + '\n' + message + '\n\n' +
-        'Thank you.'
-      );
-
-      window.location.href = 'mailto:' + businessEmail + '?subject=' + subject + '&body=' + body;
-    });
   </script>
 
 </body>
