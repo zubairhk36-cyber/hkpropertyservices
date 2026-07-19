@@ -1,167 +1,2621 @@
-I need to reposition this website from a property-services company into a broader bookkeeping, accounting-support, and financial-operations business.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-Before changing anything:
+  <title>HK Accounting & Business Services | Bookkeeping and Reporting Support</title>
 
-1. Inspect the entire repository.
-2. Identify every file containing the old company name, domain, email address, service descriptions, SEO metadata, contact form settings, and CNAME configuration.
-3. Give me a brief implementation plan.
-4. Do not make changes until the plan is clear.
-5. Use targeted edits only. Do not rewrite entire files unless absolutely necessary.
-6. Do not commit or push anything.
+  <meta
+    name="description"
+    content="Bookkeeping, reconciliation, reporting, restaurant bookkeeping and property accounting support for small and growing businesses in Toronto."
+  />
 
-New brand information:
+  <meta
+    name="keywords"
+    content="Toronto bookkeeping, small business bookkeeping, restaurant bookkeeping, property accounting, bank reconciliation, management reporting"
+  />
 
-Company name:
-HK Accounting & Business Services
+  <meta name="author" content="HK Accounting & Business Services" />
+  <meta name="robots" content="index, follow" />
 
-Primary domain:
-hkaccountingservices.ca
+  <!-- Keep this current domain until the new one is purchased and connected. -->
+  <link rel="canonical" href="https://hkpropertyservices.ca/" />
 
-Primary email:
-info@hkaccountingservices.ca
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="HK Accounting & Business Services" />
+  <meta
+    property="og:description"
+    content="Bookkeeping, reporting and financial operations support for restaurants, property owners, retailers, contractors and growing businesses."
+  />
+  <meta property="og:url" content="https://hkpropertyservices.ca/" />
+  <meta property="og:site_name" content="HK Accounting & Business Services" />
+  <meta name="theme-color" content="#0a1930" />
 
-Phone:
-416-845-5312
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "HK Accounting & Business Services",
+    "url": "https://hkpropertyservices.ca/",
+    "telephone": "+1-416-845-5312",
+    "email": "info@hkpropertyservices.ca",
+    "description": "Bookkeeping, reconciliation, reporting and financial operations support for small and growing businesses.",
+    "areaServed": "Toronto, Ontario, Canada"
+  }
+  </script>
 
-Main tagline:
-Bookkeeping, Reporting and Financial Operations for Growing Businesses
+  <style>
 
-Main positioning:
-HK Accounting & Business Services provides bookkeeping, reporting, reconciliation, accounts payable, accounts receivable, payroll administration support, sales-tax tracking, property accounting, and financial operations support for small and growing businesses.
+:root {
+  --navy-950:#061120;
+  --navy-900:#0a1930;
+  --navy-850:#0d213e;
+  --navy-800:#10294b;
+  --navy-700:#17375f;
+  --orange-600:#db5413;
+  --orange-500:#f36b21;
+  --orange-400:#ff8544;
+  --orange-100:#fff0e7;
+  --blue-100:#eaf2fb;
+  --blue-50:#f4f8fc;
+  --ink-900:#132033;
+  --ink-700:#3d4b5f;
+  --ink-600:#526176;
+  --ink-500:#6c7a8e;
+  --line:#dfe6ee;
+  --white:#fff;
+  --off-white:#fbfcfe;
+  --success:#16794b;
+  --success-bg:#e9f8f0;
+  --shadow-sm:0 8px 24px rgba(6,17,32,.08);
+  --shadow-md:0 18px 50px rgba(6,17,32,.12);
+  --shadow-lg:0 30px 80px rgba(6,17,32,.18);
+  --radius-sm:10px;
+  --radius-md:18px;
+  --radius-lg:28px;
+  --radius-xl:36px;
+  --container:1180px;
+  --header-height:78px;
+  --transition:180ms ease;
+}
 
-The company should not appear limited to property accounting. Property accounting must remain an important service, but it should be one service category under the broader business.
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
 
-Update the website with the following direction:
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--header-height) + 24px);
+}
 
-HERO SECTION
+body {
+  margin:0;
+  color:var(--ink-900);
+  background:var(--off-white);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
 
-Heading:
-Clear Books. Better Reporting. Stronger Businesses.
+body.menu-open {
+  overflow:hidden;
+}
 
-Supporting text:
-Bookkeeping, reconciliation, reporting and financial operations support for restaurants, property owners, retailers, contractors and growing businesses.
+img,
+svg {
+  display:block;
+  max-width:100%;
+}
 
-Primary button:
-Book a Free Consultation
+button,
+input,
+select,
+textarea {
+  font:inherit;
+}
 
-Secondary button:
-Explore Our Services
+button,
+a {
+  -webkit-tap-highlight-color:transparent;
+}
 
-SERVICES
+a {
+  color:inherit;
+  text-decoration:none;
+}
 
-Create or update service sections for:
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin-top:0;
+}
 
-1. Monthly Bookkeeping
-Transaction categorization, general-ledger maintenance, receipt organization and accurate monthly records.
+ul {
+  margin-top:0;
+  padding-left:1.2rem;
+}
 
-2. Bank and Credit Card Reconciliation
-Matching financial records to bank and credit-card activity and identifying missing, duplicate or incorrect transactions.
+::selection {
+  color:var(--white);
+  background:var(--orange-500);
+}
 
-3. Accounts Payable and Receivable
-Vendor invoice processing, customer invoicing, payment tracking, aging reports and outstanding-balance follow-up.
+.container {
+  width:min(calc(100% - 40px),var(--container));
+  margin-inline:auto;
+}
 
-4. Management Reporting
-Profit and loss statements, balance sheets, cash-flow summaries, expense analysis and owner reporting packages.
+.section {
+  padding:104px 0;
+}
 
-5. Payroll Administration Support
-Payroll record organization, payroll reconciliation and coordination with payroll providers.
+.section-sm {
+  padding:72px 0;
+}
 
-6. GST/HST Tracking Support
-Sales-tax tracking, reconciliation and organized filing support. Do not claim that the company provides legal or professional tax advice.
+.section-white {
+  background:var(--white);
+}
 
-7. Restaurant Bookkeeping
-POS reconciliation, delivery-platform payout reconciliation, vendor bills, food-cost tracking, tips, cash reconciliation and monthly reporting.
+.section-blue {
+  background:var(--blue-50);
+}
 
-8. Property Accounting
-Rent tracking, tenant balances, arrears reporting, property taxes, utilities, vendor invoices and property-level owner reporting.
+.section-dark {
+  color:var(--white);
+  background:
+    radial-gradient(circle at 10% 10%,rgba(37,81,132,.45),transparent 38%),
+    radial-gradient(circle at 90% 15%,rgba(243,107,33,.13),transparent 30%),
+    linear-gradient(135deg,var(--navy-950),var(--navy-850));
+}
 
-9. Year-End Bookkeeping Preparation
-Book cleanup, reconciliations, supporting schedules and organized records for the client’s CPA or tax professional.
+.section-heading {
+  max-width:760px;
+  margin-bottom:48px;
+}
 
-INDUSTRIES SECTION
+.section-heading.center {
+  margin-inline:auto;
+  text-align:center;
+}
 
-Include:
+.eyebrow {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:16px;
+  color:var(--orange-600);
+  font-size:.8rem;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
 
-Restaurants
-Real Estate and Property Owners
-Retail Businesses
-Contractors and Trades
-Professional Services
-Small Corporations and Startups
+.eyebrow::before {
+  width:30px;
+  height:2px;
+  content:"";
+  background:currentColor;
+}
 
-ABOUT SECTION
+.section-dark .eyebrow {
+  color:var(--orange-400);
+}
 
-Use this positioning:
+.display-title {
+  margin-bottom:18px;
+  color:var(--navy-900);
+  font-size:clamp(2rem,4vw,3.35rem);
+  line-height:1.08;
+  letter-spacing:-.045em;
+}
 
-HK Accounting & Business Services helps business owners gain clearer visibility and better control over their financial operations. We combine organized bookkeeping, reliable reconciliations, practical reporting and consistent follow-up so owners can spend less time managing paperwork and more time growing their businesses.
+.section-dark .display-title {
+  color:var(--white);
+}
 
-Our approach is built around clean records, clear communication and dependable execution.
+.section-copy {
+  margin-bottom:0;
+  color:var(--ink-600);
+  font-size:1.08rem;
+}
 
-CONTACT SECTION
+.section-dark .section-copy {
+  color:rgba(255,255,255,.72);
+}
 
-Update every displayed and linked email address to:
+.button-row {
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:center;
+}
 
-info@hkaccountingservices.ca
+.btn {
+  display:inline-flex;
+  min-height:52px;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:0 22px;
+  border:1px solid transparent;
+  border-radius:999px;
+  cursor:pointer;
+  font-size:.95rem;
+  font-weight:800;
+  transition:transform var(--transition),box-shadow var(--transition),background var(--transition),color var(--transition),border-color var(--transition);
+}
 
-Keep the phone number:
+.btn:hover {
+  transform:translateY(-2px);
+}
 
-416-845-5312
+.btn-primary {
+  color:var(--white);
+  background:var(--orange-500);
+  box-shadow:0 14px 30px rgba(243,107,33,.27);
+}
 
-Update the contact form destination from the old email address to the new email address.
+.btn-primary:hover {
+  background:var(--orange-600);
+  box-shadow:0 18px 38px rgba(243,107,33,.34);
+}
 
-SEO AND TECHNICAL UPDATES
+.btn-secondary {
+  color:var(--navy-900);
+  background:var(--white);
+  border-color:var(--line);
+  box-shadow:var(--shadow-sm);
+}
 
-Update:
+.btn-dark-outline {
+  color:var(--white);
+  background:transparent;
+  border-color:rgba(255,255,255,.28);
+}
 
-Page title
-Meta description
-Open Graph title
-Open Graph description
-Canonical URL
-Structured data
-Footer
-Navigation branding
-Logo text where applicable
-Contact links
-Email links
-Website links
-FormSubmit configuration
-Any hidden old-domain references
+.btn-dark-outline:hover {
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.55);
+}
 
-Recommended SEO title:
+.site-header {
+  position:sticky;
+  z-index:1000;
+  top:0;
+  min-height:var(--header-height);
+  background:rgba(255,255,255,.92);
+  border-bottom:1px solid rgba(223,230,238,.8);
+  backdrop-filter:blur(16px);
+}
 
-HK Accounting & Business Services | Bookkeeping and Reporting Support
+.nav-wrap {
+  display:flex;
+  min-height:var(--header-height);
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
 
-Recommended meta description:
+.brand {
+  display:inline-flex;
+  align-items:center;
+  gap:13px;
+  flex:0 0 auto;
+}
 
-Bookkeeping, reconciliation, reporting, restaurant bookkeeping and property accounting support for small and growing businesses in Toronto.
+.brand-mark {
+  display:grid;
+  width:48px;
+  height:48px;
+  place-items:center;
+  overflow:hidden;
+  border-radius:13px;
+  background:var(--navy-900);
+  box-shadow:0 10px 24px rgba(10,25,48,.18);
+}
 
-DOMAIN CONFIGURATION
+.brand-mark svg {
+  width:35px;
+  height:35px;
+}
 
-Update the GitHub Pages CNAME file to contain only:
+.brand-copy {
+  display:grid;
+  gap:1px;
+}
 
-hkaccountingservices.ca
+.brand-copy strong {
+  color:var(--navy-900);
+  font-size:.96rem;
+  letter-spacing:.02em;
+}
 
-Do not delete any DNS instructions or assume DNS has already been updated. Clearly tell me that I must connect the new domain through Porkbun and GitHub Pages after the code changes.
+.brand-copy span {
+  color:var(--ink-500);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
 
-DESIGN
+.desktop-nav {
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
 
-Preserve the existing navy, white and orange visual identity.
+.desktop-nav>a:not(.btn) {
+  position:relative;
+  color:var(--ink-700);
+  font-size:.9rem;
+  font-weight:700;
+}
 
-Keep the website professional, modern and mobile responsive.
+.desktop-nav>a:not(.btn)::after {
+  position:absolute;
+  right:0;
+  bottom:-7px;
+  left:0;
+  height:2px;
+  content:"";
+  background:var(--orange-500);
+  transform:scaleX(0);
+  transition:transform var(--transition);
+}
 
-Do not make the website look like a traditional tax-filing firm.
+.desktop-nav>a:not(.btn):hover::after {
+  transform:scaleX(1);
+}
 
-The brand should feel like an outsourced finance and bookkeeping partner for growing businesses.
+.nav-cta {
+  min-height:44px;
+  padding-inline:18px;
+}
 
-Do not remove the current working contact-form success message or redirect behavior.
+.menu-toggle {
+  display:none;
+  width:46px;
+  height:46px;
+  padding:0;
+  border:1px solid var(--line);
+  border-radius:12px;
+  color:var(--navy-900);
+  background:var(--white);
+  cursor:pointer;
+}
 
-Do not break existing navigation, responsiveness, animations or forms.
+.mobile-menu {
+  position:fixed;
+  z-index:999;
+  inset:var(--header-height) 0 auto 0;
+  display:none;
+  padding:24px 20px 32px;
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-md);
+}
 
-After completing the edits, provide:
+.mobile-menu.is-open {
+  display:grid;
+  gap:8px;
+}
 
-1. A list of every file changed.
-2. A summary of each change.
-3. Any old company-name, email or domain references that remain.
-4. Manual Porkbun, GitHub Pages and Zoho Mail steps still required.
-5. A reminder that nothing was committed or pushed.
+.mobile-menu a {
+  padding:13px 14px;
+  border-radius:10px;
+  color:var(--navy-900);
+  font-weight:750;
+}
+
+.hero {
+  position:relative;
+  overflow:hidden;
+  padding:86px 0 78px;
+  color:var(--white);
+  background:
+    radial-gradient(circle at 82% 18%,rgba(243,107,33,.17),transparent 23%),
+    radial-gradient(circle at 12% 10%,rgba(37,81,132,.55),transparent 33%),
+    linear-gradient(135deg,var(--navy-950) 0%,var(--navy-900) 48%,#102d55 100%);
+}
+
+.hero::before {
+  position:absolute;
+  inset:0;
+  content:"";
+  opacity:.15;
+  background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:linear-gradient(to bottom,black,transparent 88%);
+}
+
+.hero-grid {
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.07fr .93fr;
+  gap:70px;
+  align-items:center;
+}
+
+.hero-badge {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:22px;
+  padding:8px 13px;
+  color:#ffd5bd;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;
+  background:rgba(255,255,255,.07);
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+.hero-badge span {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--orange-500);
+  box-shadow:0 0 0 6px rgba(243,107,33,.12);
+}
+
+.hero h1 {
+  max-width:760px;
+  margin-bottom:22px;
+  font-size:clamp(3.05rem,6.5vw,5.7rem);
+  line-height:.98;
+  letter-spacing:-.062em;
+}
+
+.hero h1 .accent {
+  position:relative;
+  display:inline-block;
+  color:var(--orange-400);
+}
+
+.hero-copy {
+  max-width:690px;
+  margin-bottom:32px;
+  color:rgba(255,255,255,.73);
+  font-size:clamp(1.03rem,2vw,1.2rem);
+}
+
+.hero .button-row {
+  margin-bottom:34px;
+}
+
+.hero-proof {
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px 25px;
+  color:rgba(255,255,255,.74);
+  font-size:.88rem;
+  font-weight:650;
+}
+
+.hero-proof span {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.hero-proof i {
+  color:var(--orange-400);
+  font-style:normal;
+  font-weight:900;
+}
+
+.dashboard-shell {
+  position:relative;
+  padding:14px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:28px;
+  background:rgba(255,255,255,.08);
+  box-shadow:var(--shadow-lg);
+  backdrop-filter:blur(10px);
+}
+
+.dashboard {
+  overflow:hidden;
+  color:var(--ink-900);
+  border-radius:20px;
+  background:#f8fafc;
+}
+
+.dashboard-topbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:17px 18px;
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+}
+
+.dashboard-title {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--navy-900);
+  font-size:.86rem;
+  font-weight:850;
+}
+
+.dashboard-logo {
+  display:grid;
+  width:31px;
+  height:31px;
+  place-items:center;
+  color:var(--white);
+  border-radius:9px;
+  background:var(--navy-900);
+  font-size:.68rem;
+  font-weight:900;
+}
+
+.dashboard-period {
+  padding:7px 10px;
+  color:var(--ink-600);
+  border:1px solid var(--line);
+  border-radius:9px;
+  font-size:.68rem;
+  font-weight:750;
+}
+
+.dashboard-body {
+  padding:18px;
+}
+
+.metric-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.metric-card {
+  padding:14px;
+  border:1px solid #e5eaf0;
+  border-radius:13px;
+  background:var(--white);
+}
+
+.metric-label {
+  margin-bottom:6px;
+  color:var(--ink-500);
+  font-size:.6rem;
+  font-weight:750;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+
+.metric-value {
+  margin-bottom:5px;
+  color:var(--navy-900);
+  font-size:1.05rem;
+  font-weight:900;
+}
+
+.metric-change {
+  color:var(--success);
+  font-size:.6rem;
+  font-weight:800;
+}
+
+.chart-card {
+  padding:16px;
+  border:1px solid #e5eaf0;
+  border-radius:14px;
+  background:var(--white);
+}
+
+.chart-head {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+
+.bar-chart {
+  display:flex;
+  height:140px;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:9px;
+  border-bottom:1px solid #e9edf2;
+}
+
+.bar-group {
+  display:grid;
+  width:100%;
+  height:100%;
+  grid-template-columns:1fr 1fr;
+  align-items:end;
+  gap:3px;
+}
+
+.bar {
+  border-radius:6px 6px 2px 2px;
+  background:linear-gradient(to top,var(--navy-700),#255184);
+}
+
+.bar.orange {
+  background:linear-gradient(to top,var(--orange-600),var(--orange-400));
+}
+
+.trust-strip {
+  background:var(--white);
+  border-bottom:1px solid var(--line);
+}
+
+.trust-grid {
+  display:grid;
+  grid-template-columns:1.2fr repeat(4,1fr);
+  align-items:stretch;
+}
+
+.trust-intro,
+.trust-item {
+  display:flex;
+  min-height:108px;
+  align-items:center;
+  padding:22px;
+  border-right:1px solid var(--line);
+}
+
+.trust-item:last-child {
+  border-right:0;
+}
+
+.trust-intro {
+  color:var(--navy-900);
+  font-size:.88rem;
+  font-weight:850;
+  line-height:1.4;
+}
+
+.trust-item {
+  gap:12px;
+  color:var(--ink-700);
+  font-size:.8rem;
+  font-weight:750;
+}
+
+.trust-icon {
+  display:grid;
+  width:38px;
+  height:38px;
+  flex:0 0 auto;
+  place-items:center;
+  color:var(--orange-600);
+  border-radius:10px;
+  background:var(--orange-100);
+  font-weight:900;
+}
+
+.services-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.service-card {
+  position:relative;
+  display:flex;
+  min-height:305px;
+  flex-direction:column;
+  padding:30px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  background:var(--white);
+  box-shadow:0 7px 22px rgba(6,17,32,.045);
+  transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);
+}
+
+.service-card:hover {
+  border-color:#c9d4e1;
+  box-shadow:var(--shadow-md);
+  transform:translateY(-6px);
+}
+
+.service-number {
+  margin-bottom:23px;
+  color:var(--orange-500);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+
+.service-icon {
+  display:grid;
+  width:52px;
+  height:52px;
+  margin-bottom:22px;
+  place-items:center;
+  color:var(--navy-800);
+  border-radius:14px;
+  background:var(--blue-100);
+}
+
+.service-icon svg {
+  width:25px;
+  height:25px;
+}
+
+.service-card h3 {
+  margin-bottom:12px;
+  color:var(--navy-900);
+  font-size:1.18rem;
+  line-height:1.25;
+}
+
+.service-card p {
+  margin-bottom:18px;
+  color:var(--ink-600);
+  font-size:.92rem;
+}
+
+.service-link {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin-top:auto;
+  color:var(--navy-800);
+  font-size:.82rem;
+  font-weight:850;
+}
+
+.service-link svg {
+  width:16px;
+  height:16px;
+}
+
+.feature-split {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:72px;
+  align-items:center;
+}
+
+.feature-split.reverse .feature-visual {
+  order:2;
+}
+
+.feature-copy h2 {
+  margin-bottom:18px;
+  color:var(--navy-900);
+  font-size:clamp(2rem,4vw,3.1rem);
+  line-height:1.08;
+  letter-spacing:-.045em;
+}
+
+.feature-copy>p {
+  margin-bottom:26px;
+  color:var(--ink-600);
+  font-size:1.02rem;
+}
+
+.check-list {
+  display:grid;
+  gap:13px;
+  margin:0 0 30px;
+  padding:0;
+  list-style:none;
+}
+
+.check-list li {
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  color:var(--ink-700);
+  font-size:.93rem;
+  font-weight:650;
+}
+
+.check-list b {
+  color:var(--orange-500);
+}
+
+.feature-visual {
+  position:relative;
+  min-height:500px;
+  padding:34px;
+  overflow:hidden;
+  border-radius:var(--radius-xl);
+  background:
+    radial-gradient(circle at 80% 10%,rgba(243,107,33,.16),transparent 28%),
+    linear-gradient(140deg,var(--navy-900),var(--navy-700));
+  box-shadow:var(--shadow-lg);
+}
+
+.visual-label {
+  position:relative;
+  z-index:1;
+  display:inline-flex;
+  margin-bottom:30px;
+  padding:8px 11px;
+  color:#ffd9c4;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.07);
+  font-size:.7rem;
+  font-weight:850;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+.report-table {
+  position:relative;
+  z-index:1;
+  display:grid;
+  gap:12px;
+}
+
+.report-row {
+  display:grid;
+  grid-template-columns:1.4fr .8fr .65fr;
+  gap:10px;
+  align-items:center;
+  padding:15px 16px;
+  color:var(--white);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:14px;
+  background:rgba(255,255,255,.08);
+}
+
+.report-row.header {
+  color:rgba(255,255,255,.55);
+  border:0;
+  background:transparent;
+  font-size:.64rem;
+  font-weight:850;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.report-status {
+  padding:5px 7px;
+  color:#b9f5d7;
+  border-radius:999px;
+  background:rgba(22,121,75,.3);
+  font-size:.61rem;
+  font-weight:850;
+  text-align:center;
+}
+
+.report-status.pending {
+  color:#ffe0c3;
+  background:rgba(243,107,33,.23);
+}
+
+.visual-summary {
+  position:absolute;
+  z-index:2;
+  right:25px;
+  bottom:25px;
+  width:min(290px,calc(100% - 50px));
+  padding:20px;
+  color:var(--navy-900);
+  border-radius:18px;
+  background:var(--white);
+  box-shadow:var(--shadow-md);
+}
+
+.visual-summary small {
+  display:block;
+  margin-bottom:5px;
+  color:var(--ink-500);
+  font-size:.65rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.visual-summary strong {
+  display:block;
+  margin-bottom:8px;
+  font-size:1.45rem;
+}
+
+.visual-summary p {
+  margin:0;
+  color:var(--ink-600);
+  font-size:.75rem;
+}
+
+.industries-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.industry-card {
+  display:flex;
+  min-height:190px;
+  flex-direction:column;
+  padding:26px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  background:var(--white);
+  transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition);
+}
+
+.industry-card:hover {
+  border-color:#c5d1df;
+  box-shadow:var(--shadow-sm);
+  transform:translateY(-4px);
+}
+
+.industry-top {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:22px;
+}
+
+.industry-icon {
+  display:grid;
+  width:46px;
+  height:46px;
+  place-items:center;
+  color:var(--orange-600);
+  border-radius:13px;
+  background:var(--orange-100);
+  font-size:.75rem;
+  font-weight:900;
+}
+
+.industry-arrow {
+  color:#9ba7b6;
+  font-size:1.2rem;
+}
+
+.industry-card h3 {
+  margin-bottom:9px;
+  color:var(--navy-900);
+  font-size:1.06rem;
+}
+
+.industry-card p {
+  margin-bottom:0;
+  color:var(--ink-600);
+  font-size:.88rem;
+}
+
+.process-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.process-step {
+  position:relative;
+  padding:28px 24px;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:var(--radius-md);
+  background:rgba(255,255,255,.055);
+}
+
+.process-number {
+  display:grid;
+  width:42px;
+  height:42px;
+  margin-bottom:22px;
+  place-items:center;
+  color:var(--white);
+  border:1px solid rgba(255,255,255,.19);
+  border-radius:50%;
+  background:rgba(243,107,33,.18);
+  font-size:.78rem;
+  font-weight:900;
+}
+
+.process-step h3 {
+  margin-bottom:9px;
+  font-size:1rem;
+}
+
+.process-step p {
+  margin-bottom:0;
+  color:rgba(255,255,255,.65);
+  font-size:.84rem;
+}
+
+.why-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.why-card {
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:18px;
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  background:var(--white);
+}
+
+.why-icon {
+  display:grid;
+  width:56px;
+  height:56px;
+  place-items:center;
+  color:var(--navy-800);
+  border-radius:16px;
+  background:var(--blue-100);
+  font-weight:900;
+}
+
+.why-card h3 {
+  margin-bottom:8px;
+  color:var(--navy-900);
+  font-size:1.05rem;
+}
+
+.why-card p {
+  margin-bottom:0;
+  color:var(--ink-600);
+  font-size:.88rem;
+}
+
+.engagement-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.engagement-card {
+  position:relative;
+  display:flex;
+  min-height:440px;
+  flex-direction:column;
+  padding:32px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  background:var(--white);
+  box-shadow:var(--shadow-sm);
+}
+
+.engagement-card.featured {
+  color:var(--white);
+  border-color:transparent;
+  background:linear-gradient(145deg,var(--navy-900),var(--navy-700));
+  transform:translateY(-10px);
+  box-shadow:var(--shadow-lg);
+}
+
+.engagement-label {
+  display:inline-flex;
+  width:fit-content;
+  margin-bottom:22px;
+  padding:7px 10px;
+  color:var(--orange-600);
+  border-radius:999px;
+  background:var(--orange-100);
+  font-size:.69rem;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.engagement-card h3 {
+  margin-bottom:12px;
+  color:var(--navy-900);
+  font-size:1.45rem;
+}
+
+.engagement-card.featured h3 {
+  color:var(--white);
+}
+
+.engagement-card>p {
+  margin-bottom:25px;
+  color:var(--ink-600);
+  font-size:.9rem;
+}
+
+.engagement-card.featured>p {
+  color:rgba(255,255,255,.69);
+}
+
+.engagement-list {
+  display:grid;
+  gap:12px;
+  margin:0 0 30px;
+  padding:0;
+  list-style:none;
+}
+
+.engagement-list li {
+  color:var(--ink-700);
+  font-size:.86rem;
+  font-weight:650;
+}
+
+.engagement-card.featured .engagement-list li {
+  color:rgba(255,255,255,.8);
+}
+
+.engagement-card .btn {
+  width:100%;
+  margin-top:auto;
+}
+
+.faq-wrap {
+  max-width:900px;
+  margin-inline:auto;
+}
+
+.faq-item {
+  border-bottom:1px solid var(--line);
+}
+
+.faq-question {
+  display:flex;
+  width:100%;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:24px 4px;
+  color:var(--navy-900);
+  border:0;
+  background:transparent;
+  cursor:pointer;
+  font-size:1rem;
+  font-weight:850;
+  text-align:left;
+}
+
+.faq-plus {
+  font-size:1.5rem;
+  transition:transform var(--transition);
+}
+
+.faq-item.is-open .faq-plus {
+  transform:rotate(45deg);
+}
+
+.faq-answer {
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows 240ms ease;
+}
+
+.faq-item.is-open .faq-answer {
+  grid-template-rows:1fr;
+}
+
+.faq-answer-inner {
+  overflow:hidden;
+}
+
+.faq-answer p {
+  margin:0;
+  padding:0 46px 24px 4px;
+  color:var(--ink-600);
+  font-size:.93rem;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:56px;
+  align-items:start;
+}
+
+.contact-copy h2 {
+  margin-bottom:18px;
+  color:var(--white);
+  font-size:clamp(2rem,4vw,3.3rem);
+  line-height:1.06;
+  letter-spacing:-.05em;
+}
+
+.contact-copy>p {
+  margin-bottom:30px;
+  color:rgba(255,255,255,.69);
+}
+
+.contact-details {
+  display:grid;
+  gap:13px;
+}
+
+.contact-detail {
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:15px 16px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:13px;
+  background:rgba(255,255,255,.055);
+}
+
+.contact-detail-icon {
+  display:grid;
+  width:39px;
+  height:39px;
+  flex:0 0 auto;
+  place-items:center;
+  color:var(--orange-400);
+  border-radius:10px;
+  background:rgba(243,107,33,.14);
+  font-weight:900;
+}
+
+.contact-detail small {
+  display:block;
+  margin-bottom:1px;
+  color:rgba(255,255,255,.48);
+  font-size:.67rem;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.contact-detail a,
+.contact-detail span {
+  color:var(--white);
+  font-size:.9rem;
+  font-weight:750;
+}
+
+.contact-card {
+  padding:34px;
+  border-radius:var(--radius-lg);
+  background:var(--white);
+  box-shadow:var(--shadow-lg);
+}
+
+.success-message {
+  display:none;
+  margin-bottom:20px;
+  padding:15px 16px;
+  color:var(--success);
+  border:1px solid #bde7cf;
+  border-radius:12px;
+  background:var(--success-bg);
+  font-size:.87rem;
+  font-weight:750;
+}
+
+.success-message.is-visible {
+  display:block;
+}
+
+.contact-card h3 {
+  margin-bottom:8px;
+  color:var(--navy-900);
+  font-size:1.45rem;
+}
+
+.contact-card>p {
+  margin-bottom:26px;
+  color:var(--ink-600);
+  font-size:.9rem;
+}
+
+.form-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.form-group {
+  display:grid;
+  gap:7px;
+}
+
+.form-group.full {
+  grid-column:1/-1;
+}
+
+.form-group label {
+  color:var(--navy-900);
+  font-size:.76rem;
+  font-weight:850;
+}
+
+.form-control {
+  width:100%;
+  min-height:49px;
+  padding:12px 13px;
+  color:var(--ink-900);
+  border:1px solid #ccd5df;
+  border-radius:10px;
+  outline:none;
+  background:#fbfcfe;
+}
+
+.form-control:focus {
+  border-color:var(--orange-500);
+  background:var(--white);
+  box-shadow:0 0 0 4px rgba(243,107,33,.11);
+}
+
+textarea.form-control {
+  min-height:132px;
+  resize:vertical;
+}
+
+.form-note {
+  margin:14px 0 18px;
+  color:var(--ink-500);
+  font-size:.72rem;
+}
+
+.submit-btn {
+  width:100%;
+  border:0;
+}
+
+.site-footer {
+  color:rgba(255,255,255,.69);
+  background:var(--navy-950);
+}
+
+.footer-main {
+  display:grid;
+  grid-template-columns:1.35fr .75fr .9fr;
+  gap:55px;
+  padding:64px 0 42px;
+}
+
+.footer-brand .brand-copy strong {
+  color:var(--white);
+}
+
+.footer-brand .brand-copy span {
+  color:rgba(255,255,255,.47);
+}
+
+.footer-brand>p {
+  max-width:470px;
+  margin:22px 0 0;
+  color:rgba(255,255,255,.58);
+  font-size:.87rem;
+}
+
+.footer-column h3 {
+  margin-bottom:17px;
+  color:var(--white);
+  font-size:.82rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.footer-links {
+  display:grid;
+  gap:10px;
+}
+
+.footer-links a,
+.footer-links span {
+  color:rgba(255,255,255,.62);
+  font-size:.84rem;
+}
+
+.footer-bottom {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:28px;
+  padding:24px 0 30px;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+
+.footer-bottom p {
+  margin:0;
+  color:rgba(255,255,255,.45);
+  font-size:.72rem;
+}
+
+.footer-disclaimer {
+  max-width:760px;
+  text-align:right;
+}
+
+.floating-contact {
+  position:fixed;
+  z-index:900;
+  right:22px;
+  bottom:22px;
+  display:inline-flex;
+  width:56px;
+  height:56px;
+  align-items:center;
+  justify-content:center;
+  color:var(--white);
+  border-radius:50%;
+  background:var(--orange-500);
+  box-shadow:0 16px 36px rgba(243,107,33,.36);
+  font-weight:900;
+}
+
+.reveal {
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity 560ms ease,transform 560ms ease;
+}
+
+.reveal.is-visible {
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media (max-width:1080px) {
+  .desktop-nav {
+    gap:18px;
+  }
+
+  .trust-grid {
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .trust-intro {
+    grid-column:1/-1;
+    min-height:auto;
+    justify-content:center;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    text-align:center;
+  }
+
+  .services-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .process-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width:900px) {
+  :root {
+    --header-height:72px;
+  }
+
+  .desktop-nav {
+    display:none;
+  }
+
+  .menu-toggle {
+    display:grid;
+    place-items:center;
+  }
+
+  .brand-copy span {
+    display:none;
+  }
+
+  .hero-grid,
+  .feature-split,
+  .contact-grid {
+    grid-template-columns:1fr;
+  }
+
+  .feature-split.reverse .feature-visual {
+    order:initial;
+  }
+
+  .industries-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .engagement-grid {
+    grid-template-columns:1fr;
+  }
+
+  .engagement-card.featured {
+    transform:none;
+  }
+
+  .footer-main {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column:1/-1;
+  }
+}
+
+@media (max-width:680px) {
+  .container {
+    width:min(calc(100% - 28px),var(--container));
+  }
+
+  .section {
+    padding:78px 0;
+  }
+
+  .hero h1 {
+    font-size:clamp(2.72rem,13vw,4rem);
+  }
+
+  .hero .button-row {
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .hero .btn {
+    width:100%;
+  }
+
+  .metric-grid,
+  .trust-grid,
+  .services-grid,
+  .industries-grid,
+  .process-grid,
+  .why-grid,
+  .footer-main {
+    grid-template-columns:1fr;
+  }
+
+  .trust-item {
+    min-height:82px;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .feature-visual {
+    min-height:450px;
+    padding:22px;
+    border-radius:24px;
+  }
+
+  .report-row {
+    grid-template-columns:1.3fr .7fr;
+  }
+
+  .report-status,
+  .report-row.header span:last-child {
+    display:none;
+  }
+
+  .why-card {
+    grid-template-columns:1fr;
+  }
+
+  .contact-card {
+    padding:24px 19px;
+  }
+
+  .form-grid {
+    grid-template-columns:1fr;
+  }
+
+  .footer-brand {
+    grid-column:auto;
+  }
+
+  .footer-bottom {
+    flex-direction:column;
+  }
+
+  .footer-disclaimer {
+    text-align:left;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration:.01ms !important;
+    animation-duration:.01ms !important;
+  }
+
+  .reveal {
+    opacity:1;
+    transform:none;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="HK Accounting and Business Services home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M8 13h9v15h18V13h9v38h-9V37H17v14H8V13Z" fill="white"/>
+            <path d="M44 31.7 55 13H44.7L34 31.3 46.1 51H57L44 31.7Z" fill="#F36B21"/>
+          </svg>
+        </span>
+
+        <span class="brand-copy">
+          <strong>HK Accounting &amp; Business Services</strong>
+          <span>Bookkeeping • Reporting • Financial Operations</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">How It Works</a>
+        <a href="#about">Why HK</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-cta" href="#contact">Book a Consultation</a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#process">How It Works</a>
+    <a href="#about">Why HK</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-primary" href="#contact">Book a Consultation</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span></span>
+            Toronto-based bookkeeping support
+          </div>
+
+          <h1>
+            Clear Books.<br />
+            Better Reporting.<br />
+            <span class="accent">Stronger Businesses.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Bookkeeping, reconciliation, reporting and financial operations support
+            for restaurants, property owners, retailers, contractors and growing businesses.
+          </p>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="#contact">Book a Free Consultation →</a>
+            <a class="btn btn-dark-outline" href="#services">Explore Our Services</a>
+          </div>
+
+          <div class="hero-proof">
+            <span><i>✓</i> Organized monthly records</span>
+            <span><i>✓</i> Clear owner reporting</span>
+            <span><i>✓</i> Direct, reliable follow-up</span>
+          </div>
+        </div>
+
+        <div class="dashboard-shell reveal">
+          <div class="dashboard">
+            <div class="dashboard-topbar">
+              <div class="dashboard-title">
+                <span class="dashboard-logo">HK</span>
+                Monthly Business Overview
+              </div>
+              <span class="dashboard-period">Current Month</span>
+            </div>
+
+            <div class="dashboard-body">
+              <div class="metric-grid">
+                <article class="metric-card">
+                  <div class="metric-label">Revenue</div>
+                  <div class="metric-value">$84.2K</div>
+                  <div class="metric-change">Updated monthly</div>
+                </article>
+
+                <article class="metric-card">
+                  <div class="metric-label">Expenses</div>
+                  <div class="metric-value">$52.7K</div>
+                  <div class="metric-change">Fully categorized</div>
+                </article>
+
+                <article class="metric-card">
+                  <div class="metric-label">Net Position</div>
+                  <div class="metric-value">$31.5K</div>
+                  <div class="metric-change">Owner-ready view</div>
+                </article>
+              </div>
+
+              <article class="chart-card">
+                <div class="chart-head">
+                  <strong>Income vs. Expenses</strong>
+                  <small>Illustrative monthly view</small>
+                </div>
+
+                <div class="bar-chart">
+                  <div class="bar-group"><div class="bar" style="height:54%"></div><div class="bar orange" style="height:37%"></div></div>
+                  <div class="bar-group"><div class="bar" style="height:69%"></div><div class="bar orange" style="height:48%"></div></div>
+                  <div class="bar-group"><div class="bar" style="height:63%"></div><div class="bar orange" style="height:50%"></div></div>
+                  <div class="bar-group"><div class="bar" style="height:79%"></div><div class="bar orange" style="height:58%"></div></div>
+                  <div class="bar-group"><div class="bar" style="height:72%"></div><div class="bar orange" style="height:47%"></div></div>
+                  <div class="bar-group"><div class="bar" style="height:88%"></div><div class="bar orange" style="height:56%"></div></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-intro">
+          Built for owners who need clean records, clear answers and dependable execution.
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">01</span>
+          Management-ready reporting
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">02</span>
+          Organized supporting documents
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">03</span>
+          Consistent financial visibility
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">04</span>
+          Practical controls and follow-up
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="services">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">What we handle</span>
+
+          <h2 class="display-title">
+            The financial operations support your business needs to stay organized.
+          </h2>
+
+          <p class="section-copy">
+            From everyday bookkeeping to industry-specific reconciliation and owner reporting,
+            HK helps turn scattered financial activity into clear, usable information.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 5h16v14H4zM8 9h8M8 13h8M8 17h5"/>
+              </svg>
+            </div>
+            <h3>Monthly Bookkeeping</h3>
+            <p>Transaction categorization, general-ledger maintenance, receipt organization and accurate monthly records.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">02</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 7h18v10H3zM7 11h4M16 12h2"/>
+              </svg>
+            </div>
+            <h3>Bank & Credit Card Reconciliation</h3>
+            <p>Matching financial records to bank and credit-card activity and identifying missing, duplicate or incorrect transactions.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 3h10v4H7zM5 7h14v14H5zM8 12h8M8 16h5"/>
+              </svg>
+            </div>
+            <h3>Accounts Payable & Receivable</h3>
+            <p>Vendor invoice processing, customer invoicing, payment tracking, aging reports and outstanding-balance follow-up.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/>
+              </svg>
+            </div>
+            <h3>Management Reporting</h3>
+            <p>Profit and loss reporting, balance-sheet summaries, cash-flow visibility, expense analysis and owner reporting packages.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">05</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 7a4 4 0 1 1 8 0v2H8V7ZM5 21v-5a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v5"/>
+              </svg>
+            </div>
+            <h3>Payroll Administration Support</h3>
+            <p>Payroll record organization, payroll reconciliation, employee data support and coordination with your payroll provider.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">06</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 3h10v18H7zM9 7h6M9 11h6M9 15h3"/>
+              </svg>
+            </div>
+            <h3>GST/HST Tracking Support</h3>
+            <p>Sales-tax tracking, reconciliation and organized filing support, with coordination with qualified professionals where required.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">07</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 10h16M6 10V5h12v5M5 10v9h14v-9M9 14h6"/>
+              </svg>
+            </div>
+            <h3>Restaurant Bookkeeping</h3>
+            <p>POS reconciliation, delivery-platform payouts, vendor bills, food-cost tracking, tips, cash reconciliation and monthly reporting.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">08</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/>
+              </svg>
+            </div>
+            <h3>Property Accounting</h3>
+            <p>Rent tracking, tenant balances, arrears reporting, property taxes, utilities, vendor invoices and property-level owner reporting.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+
+          <article class="service-card reveal">
+            <div class="service-number">09</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 3h9l3 3v15H6zM14 3v4h4M9 12h6M9 16h6"/>
+              </svg>
+            </div>
+            <h3>Year-End Bookkeeping Preparation</h3>
+            <p>Book cleanup, reconciliations, schedules and organized supporting records for your CPA or tax professional.</p>
+            <a class="service-link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue" id="restaurant">
+      <div class="container feature-split">
+        <div class="feature-copy reveal">
+          <span class="eyebrow">Restaurant bookkeeping</span>
+
+          <h2>
+            Know what came in, what went out and where margin is being lost.
+          </h2>
+
+          <p>
+            Restaurant finances move through multiple systems every day.
+            We help connect POS sales, delivery-platform payouts, cash activity,
+            vendor bills, payroll records and food-cost information into one organized view.
+          </p>
+
+          <ul class="check-list">
+            <li><b>✓</b> POS sales reconciled to bank deposits and processors</li>
+            <li><b>✓</b> Uber Eats, DoorDash and Skip payout reconciliation</li>
+            <li><b>✓</b> Food, beverage, labour and operating-cost visibility</li>
+            <li><b>✓</b> Vendor invoice organization and payment tracking</li>
+            <li><b>✓</b> Monthly reporting prepared for owners</li>
+          </ul>
+
+          <a class="btn btn-primary" href="#contact">Discuss Your Restaurant</a>
+        </div>
+
+        <div class="feature-visual reveal">
+          <span class="visual-label">Restaurant reconciliation</span>
+
+          <div class="report-table">
+            <div class="report-row header"><span>Source</span><span>Amount</span><span>Status</span></div>
+            <div class="report-row"><span>POS card sales</span><span>$28,640</span><span class="report-status">Matched</span></div>
+            <div class="report-row"><span>Delivery platforms</span><span>$9,820</span><span class="report-status">Matched</span></div>
+            <div class="report-row"><span>Cash deposits</span><span>$6,370</span><span class="report-status pending">Review</span></div>
+            <div class="report-row"><span>Vendor invoices</span><span>$17,440</span><span class="report-status">Posted</span></div>
+          </div>
+
+          <div class="visual-summary">
+            <small>Owner visibility</small>
+            <strong>One monthly picture</strong>
+            <p>Sales, fees, deposits, vendor costs and outstanding items brought together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="property-accounting">
+      <div class="container feature-split reverse">
+        <div class="feature-visual reveal">
+          <span class="visual-label">Property-level reporting</span>
+
+          <div class="report-table">
+            <div class="report-row header"><span>Property item</span><span>Amount</span><span>Status</span></div>
+            <div class="report-row"><span>Rent collected</span><span>$42,700</span><span class="report-status">Posted</span></div>
+            <div class="report-row"><span>Tenant arrears</span><span>$2,150</span><span class="report-status pending">Follow-up</span></div>
+            <div class="report-row"><span>Property expenses</span><span>$14,960</span><span class="report-status">Posted</span></div>
+            <div class="report-row"><span>Municipal charges</span><span>$5,430</span><span class="report-status">Tracked</span></div>
+          </div>
+
+          <div class="visual-summary">
+            <small>Property performance</small>
+            <strong>Clear owner reporting</strong>
+            <p>Rent, arrears, operating expenses and property-level records in one place.</p>
+          </div>
+        </div>
+
+        <div class="feature-copy reveal">
+          <span class="eyebrow">Property accounting</span>
+
+          <h2>
+            Keep property finances organized without limiting your business to real estate.
+          </h2>
+
+          <p>
+            Property accounting remains a core specialization within HK’s broader
+            bookkeeping and business-services offering.
+          </p>
+
+          <ul class="check-list">
+            <li><b>✓</b> Rent-roll, tenant-balance and arrears tracking</li>
+            <li><b>✓</b> Property taxes, municipal bills and utilities</li>
+            <li><b>✓</b> Vendor invoices, repair expenses and backup</li>
+            <li><b>✓</b> Property-level income and expense reporting</li>
+            <li><b>✓</b> Organized year-end records for your CPA</li>
+          </ul>
+
+          <a class="btn btn-primary" href="#contact">Discuss Your Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue" id="industries">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Industries we support</span>
+
+          <h2 class="display-title">
+            Broad enough to grow with you. Specific enough to understand your workflow.
+          </h2>
+
+          <p class="section-copy">
+            HK is positioned as a cross-industry bookkeeping and financial-operations partner.
+          </p>
+        </div>
+
+        <div class="industries-grid">
+
+          <article class="industry-card reveal">
+            <div class="industry-top">
+              <span class="industry-icon">01</span>
+              <span class="industry-arrow">→</span>
+            </div>
+            <h3>Restaurants</h3>
+            <p>POS, delivery-platform, cash, vendor and food-cost reconciliation.</p>
+          </article>
+
+
+          <article class="industry-card reveal">
+            <div class="industry-top">
+              <span class="industry-icon">02</span>
+              <span class="industry-arrow">→</span>
+            </div>
+            <h3>Real Estate & Property Owners</h3>
+            <p>Rent, arrears, taxes, utilities, vendor costs and owner reporting.</p>
+          </article>
+
+
+          <article class="industry-card reveal">
+            <div class="industry-top">
+              <span class="industry-icon">03</span>
+              <span class="industry-arrow">→</span>
+            </div>
+            <h3>Retail Businesses</h3>
+            <p>Sales, merchant deposits, inventory-related expenses and vendor invoices.</p>
+          </article>
+
+
+          <article class="industry-card reveal">
+            <div class="industry-top">
+              <span class="industry-icon">04</span>
+              <span class="industry-arrow">→</span>
+            </div>
+            <h3>Contractors & Trades</h3>
+            <p>Project costs, subcontractor bills, receipts, invoicing and cash-flow tracking.</p>
+          </article>
+
+
+          <article class="industry-card reveal">
+            <div class="industry-top">
+              <span class="industry-icon">05</span>
+              <span class="industry-arrow">→</span>
+            </div>
+            <h3>Professional Services</h3>
+            <p>Client invoicing, recurring expenses and management reporting.</p>
+          </article>
+
+
+          <article class="industry-card reveal">
+            <div class="industry-top">
+              <span class="industry-icon">06</span>
+              <span class="industry-arrow">→</span>
+            </div>
+            <h3>Small Corporations & Startups</h3>
+            <p>Foundational bookkeeping and scalable back-office support.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="process">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">How it works</span>
+          <h2 class="display-title">A straightforward process from messy records to clear reporting.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <div class="process-number">01</div>
+            <h3>Discovery</h3>
+            <p>We review your business, tools, volume, deadlines and pain points.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <div class="process-number">02</div>
+            <h3>Cleanup &amp; Setup</h3>
+            <p>We organize the workflow and establish a consistent monthly process.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <div class="process-number">03</div>
+            <h3>Monthly Execution</h3>
+            <p>Transactions, reconciliations, documents and open items are handled consistently.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <div class="process-number">04</div>
+            <h3>Reporting &amp; Follow-Up</h3>
+            <p>You receive clear reporting and better financial visibility.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue" id="about">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Why HK</span>
+          <h2 class="display-title">More than data entry. A disciplined financial-operations partner.</h2>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-icon">01</div>
+            <div>
+              <h3>Accounting-led organization</h3>
+              <p>Workflows designed around accurate records, backup and traceable activity.</p>
+            </div>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-icon">02</div>
+            <div>
+              <h3>Flexible across industries</h3>
+              <p>Property accounting remains a specialization while the broader brand supports many businesses.</p>
+            </div>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-icon">03</div>
+            <div>
+              <h3>Reporting owners can use</h3>
+              <p>Monthly reporting focused on clarity, follow-up and decision support.</p>
+            </div>
+          </article>
+
+          <article class="why-card reveal">
+            <div class="why-icon">04</div>
+            <div>
+              <h3>Professional boundaries</h3>
+              <p>CPA or tax-professional coordination is used where licensed services are required.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Ways to work together</span>
+          <h2 class="display-title">Support built around the stage your business is in.</h2>
+        </div>
+
+        <div class="engagement-grid">
+          <article class="engagement-card reveal">
+            <span class="engagement-label">One-time</span>
+            <h3>Catch-Up &amp; Cleanup</h3>
+            <p>For businesses with behind, inconsistent or unreconciled records.</p>
+            <ul class="engagement-list">
+              <li>✓ Historical transaction cleanup</li>
+              <li>✓ Bank and credit-card reconciliation</li>
+              <li>✓ Missing-item identification</li>
+              <li>✓ Year-end preparation support</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Request a Review</a>
+          </article>
+
+          <article class="engagement-card featured reveal">
+            <span class="engagement-label">Ongoing</span>
+            <h3>Monthly Bookkeeping Partner</h3>
+            <p>Consistent bookkeeping, reconciliation, reporting and follow-up.</p>
+            <ul class="engagement-list">
+              <li>✓ Monthly transaction processing</li>
+              <li>✓ Reconciliations and open-item tracking</li>
+              <li>✓ Management reporting</li>
+              <li>✓ Year-end package preparation</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Book a Consultation</a>
+          </article>
+
+          <article class="engagement-card reveal">
+            <span class="engagement-label">Customized</span>
+            <h3>Financial Operations Support</h3>
+            <p>Broader support for businesses that need more than standard bookkeeping.</p>
+            <ul class="engagement-list">
+              <li>✓ Accounts payable and receivable</li>
+              <li>✓ Payroll administration support</li>
+              <li>✓ Industry-specific reconciliation</li>
+              <li>✓ Custom owner reporting</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Build a Custom Scope</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue" id="faq">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2 class="display-title">What business owners usually ask first.</h2>
+        </div>
+
+        <div class="faq-wrap">
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Do you only work with property owners?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>No. Property accounting is one specialization within the broader business. HK also supports restaurants, retailers, contractors, professional-service firms, startups and other small businesses.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Can you clean up books that are already behind?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Yes. A catch-up and cleanup engagement can be completed first, followed by an ongoing monthly process once the records are current.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Do you prepare financial reports?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Monthly reporting can include profit and loss, balance-sheet summaries, cash-flow visibility, expense analysis and owner-focused reporting. The exact package depends on your needs.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Do you file taxes or provide audit services?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>HK focuses on bookkeeping, reconciliation, reporting preparation and financial-operations support. Audit, review, assurance, legal advice and formal tax advice are outside the standard scope.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How is pricing determined?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Pricing depends on transaction volume, number of accounts, current record quality, reporting requirements and any industry-specific reconciliation needs.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item reveal">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What should I have ready for the first consultation?</span>
+              <span class="faq-plus">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Be ready to explain your business, current accounting software, approximate monthly transaction volume, current bookkeeping status and the reports you want to receive.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Start the conversation</span>
+          <h2>Let’s bring more clarity to your business finances.</h2>
+
+          <p>
+            Tell us what you run, what is difficult and what kind of financial visibility you need.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-detail-icon">@</span>
+              <div>
+                <small>Email</small>
+                <a href="mailto:info@hkpropertyservices.ca">info@hkpropertyservices.ca</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon">☎</span>
+              <div>
+                <small>Phone</small>
+                <a href="tel:+14168455312">416-845-5312</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon">⌖</span>
+              <div>
+                <small>Service Area</small>
+                <span>Toronto &amp; remote support across Canada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="success-message" id="successMessage">
+            Thank you. Your message has been submitted successfully.
+          </div>
+
+          <h3>Request a free consultation</h3>
+          <p>Complete the form and describe your current bookkeeping needs.</p>
+
+          <form action="https://formsubmit.co/info@hkpropertyservices.ca" method="POST">
+            <input type="hidden" name="_subject" value="New Website Inquiry — HK Accounting & Business Services" />
+            <input type="hidden" name="_next" value="https://hkpropertyservices.ca/?submitted=true#contact" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" />
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input class="form-control" id="name" name="name" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company name</label>
+                <input class="form-control" id="company" name="company" type="text" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input class="form-control" id="email" name="email" type="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input class="form-control" id="phone" name="phone" type="tel" />
+              </div>
+
+              <div class="form-group full">
+                <label for="businessType">Business type</label>
+                <select class="form-control" id="businessType" name="business_type" required>
+                  <option value="" selected disabled>Select your business type</option>
+                  <option>Restaurant</option>
+                  <option>Property / Real Estate</option>
+                  <option>Retail</option>
+                  <option>Contractor / Trade</option>
+                  <option>Professional Services</option>
+                  <option>Startup / Small Corporation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="service">Primary service needed</label>
+                <select class="form-control" id="service" name="service_needed" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Monthly Bookkeeping</option>
+                  <option>Catch-Up / Cleanup</option>
+                  <option>Bank and Credit Card Reconciliation</option>
+                  <option>Accounts Payable / Receivable</option>
+                  <option>Management Reporting</option>
+                  <option>Restaurant Bookkeeping</option>
+                  <option>Property Accounting</option>
+                  <option>Year-End Preparation</option>
+                  <option>Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Tell us what you need help with</label>
+                <textarea class="form-control" id="message" name="message" required></textarea>
+              </div>
+            </div>
+
+            <p class="form-note">
+              By submitting this form, you agree to be contacted regarding your inquiry.
+            </p>
+
+            <button class="btn btn-primary submit-btn" type="submit">
+              Submit Inquiry →
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M8 13h9v15h18V13h9v38h-9V37H17v14H8V13Z" fill="white"/>
+              <path d="M44 31.7 55 13H44.7L34 31.3 46.1 51H57L44 31.7Z" fill="#F36B21"/>
+            </svg>
+          </span>
+
+          <span class="brand-copy">
+            <strong>HK Accounting &amp; Business Services</strong>
+            <span>Bookkeeping • Reporting • Financial Operations</span>
+          </span>
+        </a>
+
+        <p>
+          Helping restaurants, property owners, retailers, contractors and growing businesses
+          maintain cleaner records, clearer reporting and stronger financial operations.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#industries">Industries</a>
+          <a href="#process">How It Works</a>
+          <a href="#about">Why HK</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="tel:+14168455312">416-845-5312</a>
+          <a href="mailto:info@hkpropertyservices.ca">info@hkpropertyservices.ca</a>
+          <span>Toronto, Ontario</span>
+          <span>Remote support available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear"></span> HK Accounting &amp; Business Services. All rights reserved.</p>
+
+      <p class="footer-disclaimer">
+        HK provides bookkeeping, reconciliation, reporting preparation and financial-operations support.
+        Audit, review, assurance, legal advice and formal tax advice are not included unless delivered
+        by an appropriately licensed professional under a separate engagement.
+      </p>
+    </div>
+  </footer>
+
+  <a class="floating-contact" href="tel:+14168455312" aria-label="Call HK Accounting and Business Services">☎</a>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function closeMenu() {
+      mobileMenu.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      document.body.classList.toggle("menu-open", isOpen);
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isOpen = item.classList.contains("is-open");
+
+        document.querySelectorAll(".faq-item").forEach((faqItem) => {
+          faqItem.classList.remove("is-open");
+          faqItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        });
+
+        if (!isOpen) {
+          item.classList.add("is-open");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    const queryParameters = new URLSearchParams(window.location.search);
+    const successMessage = document.getElementById("successMessage");
+
+    if (queryParameters.get("submitted") === "true") {
+      successMessage.classList.add("is-visible");
+
+      window.setTimeout(() => {
+        successMessage.classList.remove("is-visible");
+      }, 10000);
+
+      if (window.history.replaceState) {
+        window.history.replaceState({}, document.title, `${window.location.pathname}#contact`);
+      }
+    }
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries, revealObserver) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: "0px 0px -40px 0px"
+        }
+      );
+
+      revealElements.forEach((element) => observer.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add("is-visible"));
+    }
+
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
